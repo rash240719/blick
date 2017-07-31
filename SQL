@@ -1,0 +1,4 @@
+SELECT * FROM test WHERE city = 'London' OR city = 'New York' ORDER BY customer_id;
+
+SELECT * FROM test WHERE (cust_name REGEXP '(b|a|B|A)+') AND salesman_id % 2 = 0;
+SELECT * FROM test WHERE  salesman_id % 2 = 0;
