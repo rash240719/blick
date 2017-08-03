@@ -37,5 +37,7 @@ module.exports.routes = {
    ***************************************************************************/
 
 
-  'GET /p/fibo': 'p.fibo'
+  'GET /p/fibo': 'p.fibo',
+  'GET /p/tri': 'p.tri',
+  'GET /p/trisum': 'p.triSum'
 };

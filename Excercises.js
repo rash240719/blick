@@ -1,5 +1,6 @@
 function tri_sum(n) {
   var r = 0;
+  //var r = 1;
   for (var i = 1; i < n; i++) {
     r += tri(i);
   }

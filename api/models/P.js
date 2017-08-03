@@ -15,6 +15,11 @@ module.exports = {
     result: {
       type: 'number',
       required: true
+    },
+    operation: {
+      type: 'string',
+      required: true,
+      enum: ['Fibo', 'Tri', 'TriSum']
     }
   },
 
