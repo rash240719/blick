@@ -19,7 +19,7 @@ module.exports = {
     operation: {
       type: 'string',
       required: true,
-      enum: ['Fibo', 'Tri', 'TriSum']
+      isIn: ['Fibo', 'Tri', 'TriSum']
     }
   },
 

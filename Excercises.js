@@ -37,8 +37,10 @@ function fibo(n) {
   return fib(n, i);
 }
 
+/*
 for (var i = 0; i < 10; i++) {
   console.log("\n" + i);
   console.log("tri_sum: " + tri_sum(i));
   console.log("fibo  " + fibo(i));
 }
+*/

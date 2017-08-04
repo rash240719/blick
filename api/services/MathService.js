@@ -6,19 +6,40 @@
  */
 
 module.exports = {
+  sigDig: function(o) {
+    var x = o.x,
+      n = o.n;
+
+    return Math.round(x * Math.pow(10, n)) / Math.pow(10, n);
+  },
+
+  newFibo: function(o) {
+    if (o < 1) {
+      return 0;
+    } else {
+      var n = o,
+        phi = (Math.sqrt(5) + 1) / 2;
+
+      return MathService.sigDig({
+        x: (Math.pow(phi, n) - Math.pow(-phi, -n)) / Math.sqrt(5),
+        n: 0
+      });
+    }
+  },
+
   fib: function(o) {
     var n = o.n,
       i = o.i;
 
     if (i < n) {
-      i++;
       n = MathService.fib({
         n: n - 1,
-        i: i - 1
+        i: i
       }) + MathService.fib({
         n: n - 2,
-        i: i - 1
+        i: i
       });
+      i++;
     }
 
     return n;

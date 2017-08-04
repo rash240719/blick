@@ -1,1 +1,7 @@
---timeout 5s
+--require chai
+--recursive
+--ui bdd
+--globals sails
+--timeout 180s
+--slow 2000
+-s 0
